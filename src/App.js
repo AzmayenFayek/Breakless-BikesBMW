@@ -1,24 +1,60 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router, Route,
+  Switch
+} from 'react-router-dom';
 import './App.css';
+import Home from './Components/Pages/Home/Home';
+import About from './Components/Pages/About/About';
+import Contact from './Components/Pages/Contact/Contact';
+import Navbar from './Shared/Navbar/Navbar';
+import Footer from './Shared/Footer/Footer';
+import NotFound from './Components/Pages/NotFound/NotFound';
+import Admin from './Components/Pages/Admin/Admin';
+import Login from './Components/Pages/Login/Login';
+import Register from './Components/Pages/Login/Register/Register';
+import AuthProvider from './contexts/AuthProvider/AuthProvider';
+import PrivateRoute from './Components/Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <PrivateRoute path="/shop">
+            <Contact />
+          </PrivateRoute>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
+
+
+          <Route exact path="/admin">
+            <Admin></Admin>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
+          {/* <PrivateRoute exact path="/events/:id">
+              <Readmore></Readmore>
+            </PrivateRoute> */}
+          <Route exact path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 

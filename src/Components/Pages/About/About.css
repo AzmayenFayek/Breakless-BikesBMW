@@ -1,0 +1,15 @@
+.single-slider{
+    position: relative;
+    height: 300px;
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/xh1_hero4.jpg.pagespeed.ic.eLXShnsZI3.jpg);
+}
+
+.text-style {
+    position: inherit;
+    margin-top: 10%;
+    color: #fff;
+    font-size: 60px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+}

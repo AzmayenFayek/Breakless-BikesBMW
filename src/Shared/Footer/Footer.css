@@ -1,0 +1,44 @@
+
+
+.footer-area{
+  background: #1a2d6d;
+}
+.footer-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+a, button {
+  color: rgb(186, 205, 212);
+  text-decoration: none;
+}
+.footer-tittle{
+  color: #d9dcf3;
+  font-size: 16px;
+}
+.number{
+  color: #fcf157;
+  font-size: 26px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+  padding: 9px;
+  position: relative;
+  top: 0;
+  
+}
+.footer-wrapper .footer-area .footer-tittle h4 {
+  font-family: "Roboto",sans-serif;
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 28px;
+  font-weight: 700;
+}

@@ -1,0 +1,24 @@
+.no-page-found__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: Suisse Works,Georgia,Times,Times New Roman,serif;
+}
+.highlight-color {
+  color: #a435f0;
+}
+.no-page-found {
+  padding-top: 65px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0;
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+.no-page-sub {
+  margin-bottom: 1.2em;
+  font-size: 19px;
+  margin-bottom: 64px;
+}

@@ -1,0 +1,21 @@
+
+.navbar-brand {
+    color: rgb(13, 17, 63)!important;
+    font-size: 30px;
+    font-weight: 500;
+}
+.nav-item {
+    padding-right: 1rem;
+}
+li {
+    color: rgb(13, 17, 63);
+}
+.navbar-light .navbar-nav .nav-link {
+    color:rgb(13, 17, 63);
+    font-weight: 500;
+    font-size: 17px;
+}
+.margin-user{
+    margin-bottom: 0!important;
+}
+
