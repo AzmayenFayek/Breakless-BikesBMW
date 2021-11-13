@@ -13,7 +13,7 @@ const AddBikes = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/addBikes`, {
+        fetch(`https://shielded-brook-47380.herokuapp.com/addBikes`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

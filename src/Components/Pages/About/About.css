@@ -6,7 +6,9 @@
 
     background-blend-mode: overlay;
 }
-
+h4{
+    color:#fff;
+}
 .text-style {
     position: inherit;
     margin-top: 10%;

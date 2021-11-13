@@ -18,6 +18,7 @@ import AddBikes from './Components/Pages/AddBikes/AddBikes';
 import AllBikes from './Components/Pages/AllBikes/AllBikes';
 import BikeDetails from './Components/Pages/BikeDetails/BikeDetails';
 import BuyNow from './Components/Pages/BuyNow/BuyNow';
+import MyOrder from './Components/Pages/MyOrder/MyOrder';
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
           <PrivateRoute exact path="/allBikes">
             <Navbar />
             <AllBikes />
+            <Footer />
+          </PrivateRoute>
+          <PrivateRoute exact path="/myOrder">
+            <Navbar />
+            <MyOrder />
             <Footer />
           </PrivateRoute>
           <PrivateRoute exact path="/bikes/:id">

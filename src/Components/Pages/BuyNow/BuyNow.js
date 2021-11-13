@@ -15,16 +15,26 @@ const BuyNow = () => {
 
     const { id } = useParams();
     const [bike, setBike] = useState({})
+    const email = sessionStorage.getItem("email");
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/allBikes/${id}`)
+        fetch(`https://shielded-brook-47380.herokuapp.com/allBikes/${id}`)
             .then(res => res.json())
             .then(data => setBike(data))
     }, [])
     const onSubmit = (data) => {
+        data.email = email;
+        fetch(`https://shielded-brook-47380.herokuapp.com/orderNow`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((result) => console.log(result));
         console.log(data);
     };
+
 
 
     return (

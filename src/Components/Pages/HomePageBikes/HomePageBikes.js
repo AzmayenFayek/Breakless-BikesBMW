@@ -11,7 +11,7 @@ const HomePageBikes = () => {
     const [bike, setBike] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allBikes`)
+        fetch(`https://shielded-brook-47380.herokuapp.com/allBikes`)
             .then((res) => res.json())
             .then((data) => setBike(data));
     }, []);

@@ -12,7 +12,7 @@ const AllBikes = () => {
     const [bike, setBike] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allBikes`)
+        fetch(`https://shielded-brook-47380.herokuapp.com/allBikes`)
             .then((res) => res.json())
             .then((data) => setBike(data));
     }, []);
@@ -30,7 +30,7 @@ const AllBikes = () => {
                     <div className="content-event">
                         {bike?.map((pd, index) => (
 
-                            <div className="single-event" key={pd.id}>
+                            <div className="single-event" key={pd._id}>
                                 <div className="single-cat mb-30 ">
                                     <div className="cat-img">
                                         <img src={pd.image} alt="" />

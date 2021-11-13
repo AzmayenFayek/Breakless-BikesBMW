@@ -1,8 +1,9 @@
 # Breakless 
 ## Niche based Bike related website.
 
-- client site: https://github.com/programming-hero-web-course-4/niche-website-client-side-AzmayenFayekk
-- live link:
+- client side: https://github.com/programming-hero-web-course-4/niche-website-client-side-AzmayenFayek
+- server side: https://github.com/programming-hero-web-course-4/niche-website-server-side-AzmayenFayek
+- live link: https://breakless-bikers.web.app
 
 - It's is build with React js, bootstrap, html, css,
 - Hosting: Firebase
