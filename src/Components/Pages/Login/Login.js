@@ -2,6 +2,8 @@ import { Container, Grid, TextField, Typography, Button, CircularProgress, Alert
 import React, { useState } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from './../../../hooks/useAuth';
+import Footer from './../../../Shared/Footer/Footer';
+import Navbar from './../../../Shared/Navbar/Navbar';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -26,23 +28,26 @@ const Login = () => {
         e.preventDefault();
     }
     return (
-        <Container>
-            <Grid container spacing={2}>
-                <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+        <>
+            <Navbar></Navbar>
+            <Container>
+
+
+                <Grid item sx={{ mx: "auto", width: 300, mt: 8, mb: 8 }} xs={12} md={6}>
                     <Typography
-                        sx={{ width: '75%', m: 1, textAlign: 'center' }}
+                        sx={{ width: '100%', m: 1, textAlign: 'center' }}
 
                         variant="body1" gutterBottom>Login</Typography>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
-                            sx={{ width: '75%', m: 1 }}
+                            sx={{ width: '100%', m: 1 }}
                             id="standard-basic"
                             label="Email"
                             name="email"
                             onChange={handleOnChange}
                             variant="standard" />
                         <TextField
-                            sx={{ width: '75%', m: 1 }}
+                            sx={{ width: '100%', m: 1 }}
 
                             id="standard-basic"
                             label="Password"
@@ -53,7 +58,7 @@ const Login = () => {
                             variant="standard" />
 
                         <Button
-                            sx={{ width: '75%', m: 1 }}
+                            sx={{ width: '100%', m: 1 }}
 
                             id="standard-basic"
                             label="Submit"
@@ -61,7 +66,7 @@ const Login = () => {
                             variant="contained" >Login</Button>
                         <NavLink to="/register">
                             <Button variant="text"
-                                sx={{ width: '75%', textAlign: 'center' }}>
+                                sx={{ width: '100%', textAlign: 'center' }}>
                                 New User? Please Register.</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
@@ -76,15 +81,14 @@ const Login = () => {
 
                         }
                     </form>
-                    <Grid item sx={{ mt: 8 }} xs={12} md={6}>
 
-                    </Grid>
 
                 </Grid>
 
 
-            </Grid>
-        </Container>
+            </Container>
+            <Footer></Footer>
+        </>
     );
 };
 

@@ -33,6 +33,7 @@ const useFirebase = () => {
             .then((userCredential) => {
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
+                sessionStorage.setItem("email", userCredential.user.email);
                 setAuthError('');
             })
             .catch((error) => {

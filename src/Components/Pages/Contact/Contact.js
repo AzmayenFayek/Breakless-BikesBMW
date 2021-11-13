@@ -12,7 +12,7 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-xl-12">
                             <div className="hero__caption hero__caption2 text-center">
-                                <h2 className="text-style" >About Us</h2>
+                                <h2 className="text-style" >Contact Us</h2>
                             </div>
                         </div>
                     </div>
@@ -30,12 +30,12 @@ const Contact = () => {
                             <div className="right-caption">
 
                                 <div className="section-tittle">
-                                    <h2>We care you for 24/7 adventure</h2>
+                                    <h2>Get 24 hr service</h2>
                                 </div>
                                 <div className="support-caption">
                                     <p className="mb-50">Let’s start your journey with us, your dream will come true.</p>
-                                    <p className="mb-50">We have trained travelers guide</p>
-                                    <p className="mb-50">Have a nice journey</p>
+                                    <p className="mb-50">Get the latest bikes arround the word</p>
+                                    <p className="mb-50">We provide 2 years Guaranttee</p>
 
                                     <a href="about.html" className="btn about-btn">Call Us</a>
                                 </div>

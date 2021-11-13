@@ -1,5 +1,96 @@
 .header-contact{
     position: relative;
     height: 300px;
-    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/xh1_hero2.jpg.pagespeed.ic.PmzV1meyjL.jpg);
+    background-image: url(https://www.routetripusa.co.uk/img/banner%20mbike%20mountains.png),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    background-blend-mode: overlay;
+
+}
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.text-style {
+    position: inherit;
+    margin-top: 10%;
+    color: #fff;
+    font-size: 60px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.bottom-padding {
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
+.container {
+    max-width: 1200px;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.support-company-area .support-location-img {
+    position: relative;
+}
+.support-company-area .support-location-img img {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.support-company-area .right-caption {
+    position: relative;
+}
+.section-tittle>span {
+    color: #7EA0FF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 0.05em;
+}
+.support-company-area .right-caption .support-caption p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.about-btn {
+    padding: 30px 40px;
+}
+
+.about-btn {
+    padding: 30px 40px;
+}
+.btn {
+    background: #310446;
+    font-family: "Roboto",sans-serif;
+    padding: 20px 43px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
 }

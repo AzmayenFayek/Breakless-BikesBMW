@@ -14,6 +14,10 @@ import Login from './Components/Pages/Login/Login';
 import Register from './Components/Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './Components/Pages/Login/PrivateRoute/PrivateRoute';
+import AddBikes from './Components/Pages/AddBikes/AddBikes';
+import AllBikes from './Components/Pages/AllBikes/AllBikes';
+import BikeDetails from './Components/Pages/BikeDetails/BikeDetails';
+import BuyNow from './Components/Pages/BuyNow/BuyNow';
 
 function App() {
   return (
@@ -29,8 +33,21 @@ function App() {
           <Route exact path="/about">
             <About></About>
           </Route>
-          <PrivateRoute path="/shop">
-            <Contact />
+          <Route exact path="/addBikes">
+
+            <AddBikes />
+
+          </Route>
+          <PrivateRoute exact path="/allBikes">
+            <Navbar />
+            <AllBikes />
+            <Footer />
+          </PrivateRoute>
+          <PrivateRoute exact path="/bikes/:id">
+            <BikeDetails />
+          </PrivateRoute>
+          <PrivateRoute exact path="/buyNow/:id">
+            <BuyNow />
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
@@ -46,9 +63,7 @@ function App() {
           <Route exact path="/contact">
             <Contact></Contact>
           </Route>
-          {/* <PrivateRoute exact path="/events/:id">
-              <Readmore></Readmore>
-            </PrivateRoute> */}
+
           <Route exact path="*">
             <NotFound></NotFound>
           </Route>
