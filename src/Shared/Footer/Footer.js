@@ -13,7 +13,7 @@ const Footer = () => {
 
                                 <div className="footer-tittle">
                                     <div className="footer-pera">
-                                        <p className="footer-pera">Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</p>
+                                        <p className="footer-pera">Life is a race. The more we fit for it the more we can enjoy it.Happy Race!!!</p>
                                     </div>
 
                                     <div className="footer-social">
@@ -44,10 +44,10 @@ const Footer = () => {
                             <div className="footer-tittle">
                                 <h4>Services</h4>
                                 <ul>
-                                    <li><a href="#">Blackforest</a></li>
-                                    <li><a href="#">Bodhubon</a></li>
-                                    <li><a href="#">Rongdhonu</a></li>
-                                    <li><a href="#">Meghrong</a></li>
+                                    <li><a href="#">Mountain Bike</a></li>
+                                    <li><a href="#">Racing Bike</a></li>
+                                    <li><a href="#">Road Bike</a></li>
+                                    <li><a href="#">Stunt Bike</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                             <div className="footer-tittle mb-20">
                                 <h4>Contact Us</h4>
                                 <p>76/A, Green Lane, Dhanmondi, NYC</p>
-                                <p>Tripo@gmail.com</p>
+                                <p>Breakless@gmail.com</p>
                             </div>
                             <ul className="mb-20">
                                 <li className="number">0188888888</li>
