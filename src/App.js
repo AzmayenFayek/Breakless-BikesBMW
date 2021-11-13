@@ -44,6 +44,9 @@ function App() {
             <AllBikes />
             <Footer />
           </PrivateRoute>
+          <PrivateRoute exact path="/admin">
+            <Admin />
+          </PrivateRoute>
           <PrivateRoute exact path="/myOrder">
             <Navbar />
             <MyOrder />
@@ -54,6 +57,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute exact path="/buyNow/:id">
             <BuyNow />
+          </PrivateRoute>
+          <PrivateRoute exact path="/addBikes">
+            <AddBikes />
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>

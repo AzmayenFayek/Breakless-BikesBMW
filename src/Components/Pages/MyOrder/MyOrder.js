@@ -7,6 +7,8 @@ const MyOrder = () => {
     const email = sessionStorage.getItem("email");
     const [orders, setOrders] = useState([]);
 
+    const [control, setControl] = useState(false);
+
     useEffect(() => {
         fetch(`https://shielded-brook-47380.herokuapp.com/myOrder/${email}`)
             .then((res) => res.json())
@@ -18,7 +20,11 @@ const MyOrder = () => {
             method: "DELETE",
         })
             .then((res) => res.json())
-            .then((data) => console.log(data));
+            .then((data) => {
+                if (data.deletedCount) {
+                    setControl(!control);
+                }
+            });
 
         console.log(id);
 
